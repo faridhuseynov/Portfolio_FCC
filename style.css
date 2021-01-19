@@ -1,0 +1,46 @@
+body {
+    box-sizing: border-box;
+}
+
+#navbar{
+    position: fixed;
+}
+
+main {
+    position: absolute;
+    margin-top: 30px;
+}
+
+#projects {
+    /* has to be set up for the fitting whole window*/
+    height: 100vw;
+    width: 300px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(43, 41, 41);
+}
+
+img{
+    margin:0;
+}
+
+.responsive-img{
+    height: auto;
+    max-width: 100%;
+}
+
+.project-title {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
