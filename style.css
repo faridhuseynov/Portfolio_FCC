@@ -1,21 +1,52 @@
 body {
     box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
 }
 
 #navbar{
     position: fixed;
     color: red;
+    height: 5vh;
+    width: 99vw;
+    z-index: 2;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navbar a:visited{
+    color: burlywood;
 }
 
 main {
+    z-index: 1;
     position: absolute;
-    margin-top: 30px;
 }
+
+#container {
+    top: 10px;
+    margin-top: 20px;
+}
+
+#welcome-section {
+    height: 100vh;
+    width: 99vw;
+    margin-top: 60px;
+}
+
 
 #projects {
     /* has to be set up for the fitting whole window*/
-    height: 100vw;
-    width: 300px;
+    height: 100vh;
+    margin-top: 20px;
+    top: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .project {
