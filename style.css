@@ -1,5 +1,6 @@
 html {
-    scroll-padding-top: 80px; /* height of your sticky header */
+    /* height of your sticky header */
+    scroll-padding-top: 80px; 
   }
 
 body {
@@ -43,23 +44,31 @@ body {
 }
 main {
     z-index: 1;
-    margin-top: 10px !important;
 }
 
 #container {
-    margin-top: 20px;
     width: 98vw;
 }
 
 #welcome-section {
+    background-color: slateblue;
     height: 98vh;
     width: 98vw;
-    margin-top: 60px;
+}
+
+#projects-div {
+    background-color: tomato;
+    height: 100vh;
 }
 
 #projects-intro{
-    margin-top: 30px;
+    margin-top: 60px;
 }
+
+h2{
+    margin:60px;
+}
+
 
 #projects, #contact-info {
     /* has to be set up for the fitting whole window*/
