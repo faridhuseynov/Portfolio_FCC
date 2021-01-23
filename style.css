@@ -38,13 +38,14 @@ body {
     font-size: 25px;
 }
 
+#nav-links a:hover{
+    background-color: darkslategrey;
+}
+
 #navbar a:visited{
     color: lightcyan;
 }
 
-#nav-links a:hover{
-    background-color: green;
-}
 main {
     left: 0;
     z-index: 1;
@@ -108,7 +109,7 @@ main {
 
 
 
-#projects, #contact-info {
+#projects {
     /* has to be set up for the fitting whole window*/
     margin-top: 0px;
     height: 90vh;
@@ -163,7 +164,7 @@ img{
 #projects-show-all:hover{
         cursor: pointer;
         color: white;
-        animation: hover 1.0s;
+        animation: hover 0.5s;
         animation-fill-mode: forwards;
     
 }
@@ -176,8 +177,48 @@ img{
 a {
     text-decoration: none;
     padding:11px;
+    color: white;
+}
+
+a:visited{
+    color: white;
 }
 
 .project a:visited {
     color: white;
 }
+
+#contact-info {
+    /* has to be set up for the fitting whole window*/
+    margin-top: 0px;
+    height: 100vh;
+    background-color: #303841;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.info-tags {
+    padding:40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.info-tags:hover {
+    animation: infoHovered 1s forwards;
+}
+
+@keyframes infoHovered {
+    from{top:0px}
+    to{top:15px}
+}
+
