@@ -1,59 +1,91 @@
 html {
     /* height of your sticky header */
-    scroll-padding-top: 80px; 
+    scroll-padding-top: 100px; 
+    scroll-behavior: smooth;
   }
 
 body {
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #navbar{
     position: fixed;
+    left: 0;
     top: 0;
-    color: red;
-    height: 5vh;
-    width: 98vw;
-    z-index: 2;
+    height: 10%;
+    width: 100vw;
     background-color: brown;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-
-#navbar a:visited{
-    color: burlywood;
+    z-index: 2;
 }
 
 #nav-links{
     display: flex;
-    width: 25%;
-    padding: 10px;
-    padding-right: 0;
     justify-content: flex-end;
+    height: 50px;
+    align-items: center;
+    margin-right: 15px;
 }
 
 #nav-links a{
-    padding:10px;
+    margin: 0;
+    padding: 33px;
+    width: 30%;
+    font-size: 25px;
+}
+
+#navbar a:visited{
+    color: lightcyan;
 }
 
 #nav-links a:hover{
-    background-color: yellow;
+    background-color: green;
 }
 main {
+    left: 0;
     z-index: 1;
+    position: absolute;
+    top:95px;
+    width: 100vw;
 }
 
 #container {
-    width: 98vw;
+    width: 100vw;
 }
 
 #welcome-section {
-    background-color: slateblue;
-    height: 98vh;
-    width: 98vw;
+    background-image: url('https://cdn.hipwallpaper.com/i/19/40/QdAz7C.jpg');
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    padding: 300px;
+    align-items: center;    
+}
+
+#description-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#typing-line {
+    height: 30px;
+    width: 5px;
+    animation: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes blink {
+    from, to{    background-color: white;}
+    50%{background-color: transparent;}
 }
 
 #projects-div {
@@ -66,7 +98,7 @@ main {
 }
 
 h2{
-    margin:60px;
+    margin:0px;
 }
 
 
